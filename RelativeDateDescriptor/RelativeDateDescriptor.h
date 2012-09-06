@@ -25,6 +25,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Singleton.h"
 
 typedef enum {
     RDDTimeUnitMilliSeconds,
@@ -55,6 +56,8 @@ typedef enum {
 @interface RelativeDateDescriptor : NSObject {
     
 }
+
+SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(RelativeDateDescriptor);
 
 @property (nonatomic, copy) NSString* priorDateDescriptionFormat;
 @property (nonatomic, copy) NSString* postDateDescriptionFormat;

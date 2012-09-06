@@ -45,6 +45,8 @@ const double    kSecondsInAYear   = kSecondsInADay * 356.242199;
 
 @implementation RelativeDateDescriptor
 
+SYNTHESIZE_SINGLETON_FOR_CLASS(RelativeDateDescriptor);
+
 @synthesize priorDateDescriptionFormat;
 @synthesize postDateDescriptionFormat;
 
@@ -137,7 +139,7 @@ const double    kSecondsInAYear   = kSecondsInADay * 356.242199;
         case RDDTimeUnitMinutes:
             return @"minute";
         case RDDTimeUnitHours:
-            return @"hour";
+            return @"hr";
         case RDDTimeUnitDays:
             return @"day";
         case RDDTimeUnitMonths:
