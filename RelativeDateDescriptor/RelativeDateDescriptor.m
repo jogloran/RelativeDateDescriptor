@@ -143,7 +143,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(RelativeDateDescriptor);
         case RDDTimeUnitDays:
             return @"day";
         case RDDTimeUnitMonths:
-            return @"month";
+            return @"mth";
         case RDDTimeUnitYears:
             return @"year";
         default:
